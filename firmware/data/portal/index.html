@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PocketPet Wi-Fi Setup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <span class="logo">🐶</span>
+      <h1>PocketPet Setup</h1>
+    </div>
+    <p class="subtitle">Connect your PocketPet to your home Wi-Fi network</p>
+
+    <form action="/save" method="POST">
+      <div class="field">
+        <label for="ssid">Wi-Fi Network Name (SSID)</label>
+        <input type="text" id="ssid" name="ssid" required placeholder="e.g. MyHomeWiFi">
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Leave empty if open">
+      </div>
+
+      <button type="submit" class="btn">Connect Device</button>
+    </form>
+  </div>
+</body>
+</html>
+
