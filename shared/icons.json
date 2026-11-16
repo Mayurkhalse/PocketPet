@@ -1,0 +1,19 @@
+[
+  { "id": 1, "name": "heart", "label": "Heart" },
+  { "id": 2, "name": "star", "label": "Star" },
+  { "id": 3, "name": "bone", "label": "Bone" },
+  { "id": 4, "name": "paw", "label": "Paw" },
+  { "id": 5, "name": "smile", "label": "Smile" },
+  { "id": 6, "name": "sad", "label": "Sad" },
+  { "id": 7, "name": "kiss", "label": "Kiss" },
+  { "id": 8, "name": "sun", "label": "Sun" },
+  { "id": 9, "name": "moon", "label": "Moon" },
+  { "id": 10, "name": "coffee", "label": "Coffee" },
+  { "id": 11, "name": "music", "label": "Music" },
+  { "id": 12, "name": "gift", "label": "Gift" },
+  { "id": 13, "name": "cake", "label": "Cake" },
+  { "id": 14, "name": "check", "label": "Check" },
+  { "id": 15, "name": "bell", "label": "Bell" },
+  { "id": 16, "name": "hug", "label": "Hug" }
+]
+
