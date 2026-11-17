@@ -48,7 +48,7 @@ No external resistors are needed. All connections are direct board-to-board wire
                       │  3.3V ──────────────────────────┼──► OLED "VCC"
                       │  GND  ──────────────────────────┼──► OLED "GND"
                       │  GPIO 5 (SDA) ──────────────────┼──► OLED "SDA"
-                      │  GPIO 6 (SCL) ──────────────────┼──► OLED "SCL"
+                      │  GPIO 6 (SCL) ──────────────────┼──► OLED "SCK / SCL"
                       │                                 │
                       │  GPIO 3 ────────[ Tactile ]─────┤
                       │  GND    ────────[ Button  ]─────┘
@@ -66,7 +66,7 @@ No external resistors are needed. All connections are direct board-to-board wire
 | **0.96" OLED** | **`VCC`** | **ESP32-C3** | **`3.3V`** | Display logic power |
 | **0.96" OLED** | **`GND`** | **ESP32-C3** | **`GND`** | Ground |
 | **0.96" OLED** | **`SDA`** | **ESP32-C3** | **`GPIO 5`** | Hardware I²C Data |
-| **0.96" OLED** | **`SCL`** | **ESP32-C3** | **`GPIO 6`** | Hardware I²C Clock |
+| **0.96" OLED** | **`SCK` (or `SCL`)** | **ESP32-C3** | **`GPIO 6`** | Hardware I²C Clock (labeled SCK, SCL, or CLK) |
 | **Tactile Button** | Leg 1 | **ESP32-C3** | **`GPIO 3`** | Configured as `INPUT_PULLUP` in firmware |
 | **Tactile Button** | Leg 2 | **ESP32-C3** | **`GND`** | Ground |
 
@@ -314,3 +314,4 @@ Update `API_BASE_URL` in `firmware/include/secrets.h` to your Render URL:
 #define API_BASE_URL "https://pocketpet-api.onrender.com/api/v1"
 ```
 Re-flash with `pio run -t upload` and your PocketPet will work seamlessly anywhere in the world!
+

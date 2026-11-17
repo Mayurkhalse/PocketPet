@@ -8,7 +8,7 @@
 |-----------|--------------|---------------|---------------------|
 | **OLED (SSD1306 128x64 I2C)** | VCC | 3.3V | Screen logic & display power |
 | | GND | GND | Common ground |
-| | SCL | GPIO 6 | I2C Clock (Hardware I2C) |
+| | SCK (or SCL / CLK) | GPIO 6 | I2C Clock (Hardware I2C) |
 | | SDA | GPIO 5 | I2C Data (Hardware I2C) |
 | **Tactile Button (External)** | Leg 1 | GPIO 3 | Configured as `INPUT_PULLUP` |
 | | Leg 2 | GND | Press pulls GPIO 3 to LOW |
